@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.curtisnewbie</groupId>
+  <artifactId>curtisnewbie-bom</artifactId>
+  <version>micro-0.0.1</version>
+  <packaging>pom</packaging>
+  <name>BOM for com.curtisnewbie.* spring-based modules and projects, used for microservices</name>
+
+  <properties>
+    <java.version>8</java.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- https://github.com/CurtisNewbie/authmodule -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>authmodule</artifactId>
+        <version>micro-1.0.1</version>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/service-module -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>service-module</artifactId>
+        <version>0.0.1</version>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/common-module -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>common-module</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/distributed-task-module -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>distributed-task-module</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/log-tracing-module -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>log-tracing-module</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/redis-util-module -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>redis-util-module</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <!-- AspectJ & AOP -->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.5</version>
+      </dependency>
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>1.9.5</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>7.0.1.Final</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.20</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper</artifactId>
+        <version>5.2.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>1.2.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/comment-generator -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>comment-generator</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.mybatis.generator</groupId>
+          <artifactId>mybatis-generator-maven-plugin</artifactId>
+          <version>1.4.0</version>
+          <dependencies>
+            <dependency>
+              <groupId>com.curtisnewbie</groupId>
+              <artifactId>comment-generator</artifactId>
+              <version>1.0-SNAPSHOT</version>
+            </dependency>
+          </dependencies>
+          <configuration>
+            <configurationFile>generatorConfig.xml</configurationFile>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+
+</project>
