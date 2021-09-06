@@ -21,6 +21,13 @@
         <version>micro-2.0.0</version>
       </dependency>
 
+      <!-- https://github.com/CurtisNewbie/authmodule -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>auth-module-web</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
       <!-- https://github.com/CurtisNewbie/service-module -->
       <dependency>
         <groupId>com.curtisnewbie</groupId>
