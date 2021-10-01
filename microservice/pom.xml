@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.curtisnewbie</groupId>
   <artifactId>curtisnewbie-bom</artifactId>
-  <version>micro-2.0.0</version>
+  <version>micro-2.0.1</version>
   <packaging>pom</packaging>
   <name>com.curtisnewbie-BOM</name>
   <description>BOM for com.curtisnewbie.* spring-based modules and projects, used for microservices</description>
