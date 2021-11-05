@@ -31,6 +31,18 @@
         <version>1.0.1</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>auth-service-remote</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>auth-service-messaging</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
       <!-- no needed anymore, because we now use spring-cloud -->
       <!-- https://github.com/CurtisNewbie/service-module -->
       <!-- 
