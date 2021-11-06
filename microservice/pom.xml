@@ -26,16 +26,6 @@
     <dependencies>
       <!-- imported pom -->
       <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.2.RELEASE</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <!-- imported pom -->
-
-      <dependency>
         <groupId>com.alibaba.cloud</groupId>
         <artifactId>spring-cloud-alibaba-dependencies</artifactId>
         <version>2.2.6.RELEASE</version>
@@ -146,11 +136,11 @@
         <version>3.16.1</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.hibernate.validator</groupId>
-        <artifactId>hibernate-validator</artifactId>
-        <version>7.0.1.Final</version>
-      </dependency>
+<!--      <dependency>-->
+<!--        <groupId>org.hibernate.validator</groupId>-->
+<!--        <artifactId>hibernate-validator</artifactId>-->
+<!--        <version>7.0.1.Final</version>-->
+<!--      </dependency>-->
 
       <dependency>
         <groupId>org.projectlombok</groupId>
