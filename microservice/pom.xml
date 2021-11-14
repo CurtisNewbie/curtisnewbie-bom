@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.curtisnewbie</groupId>
   <artifactId>curtisnewbie-bom</artifactId>
-  <version>micro-2.0.1</version>
+  <version>micro-2.0.2</version>
   <packaging>pom</packaging>
   <name>com.curtisnewbie-BOM</name>
   <description>BOM for com.curtisnewbie.* spring-based modules and projects, used for microservices</description>
@@ -13,6 +13,14 @@
     <java.version>8</java.version>
     <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
     <lombok.version>1.18.20</lombok.version>
+    <common-module.version>2.0.2</common-module.version>
+    <messaging-module.version>2.0.2</messaging-module.version>
+    <auth-service.version>1.0.2</auth-service.version>
+    <auth-module.version>micro-2.0.2</auth-module.version>
+    <auth-module-web.version>1.0.2</auth-module-web.version>
+    <distributed-task-module.version>2.0.2</distributed-task-module.version>
+    <log-tracing-module.version>2.0.1</log-tracing-module.version>
+    <redis-util-module.version>2.0.1</redis-util-module.version>
   </properties>
 
   <parent>
@@ -45,26 +53,26 @@
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>auth-module</artifactId>
-        <version>micro-2.0.1</version>
+        <version>${auth-module.version}</version>
       </dependency>
 
       <!-- https://github.com/CurtisNewbie/authmodule -->
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>auth-module-web</artifactId>
-        <version>1.0.1</version>
+        <version>${auth-module-web.version}</version>
       </dependency>
 
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>auth-service-remote</artifactId>
-        <version>1.0.1</version>
+        <version>${auth-service.version}</version>
       </dependency>
 
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>auth-service-messaging</artifactId>
-        <version>1.0.0</version>
+        <version>${auth-service.version}</version>
       </dependency>
 
       <!-- no needed anymore, because we now use spring-cloud -->
@@ -87,35 +95,42 @@
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>common-module</artifactId>
-        <version>2.0.1</version>
+        <version>${common-module.version}</version>
       </dependency>
 
       <!-- https://github.com/CurtisNewbie/distributed-task-module -->
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>distributed-task-module</artifactId>
-        <version>2.0.1</version>
+        <version>${distributed-task-module.version}</version>
       </dependency>
 
       <!-- https://github.com/CurtisNewbie/log-tracing-module -->
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>log-tracing-module</artifactId>
-        <version>2.0.1</version>
+        <version>${log-tracing-module.version}</version>
       </dependency>
 
       <!-- https://github.com/CurtisNewbie/redis-util-module -->
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>redis-util-module</artifactId>
-        <version>2.0.1</version>
+        <version>${redis-util-module.version}</version>
       </dependency>
 
       <!-- https://github.com/CurtisNewbie/messaging-module -->
       <dependency>
         <groupId>com.curtisnewbie</groupId>
         <artifactId>messaging-module</artifactId>
-        <version>2.0.1</version>
+        <version>${messaging-module.version}</version>
+      </dependency>
+
+      <!-- https://github.com/CurtisNewbie/comment-generator -->
+      <dependency>
+        <groupId>com.curtisnewbie</groupId>
+        <artifactId>comment-generator</artifactId>
+        <version>1.0-SNAPSHOT</version>
       </dependency>
 
       <!-- AspectJ & AOP -->
@@ -170,13 +185,6 @@
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>8.0.21</version>
-      </dependency>
-
-      <!-- https://github.com/CurtisNewbie/comment-generator -->
-      <dependency>
-        <groupId>com.curtisnewbie</groupId>
-        <artifactId>comment-generator</artifactId>
-        <version>1.0-SNAPSHOT</version>
       </dependency>
 
     </dependencies>
