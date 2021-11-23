@@ -15,7 +15,7 @@
     <lombok.version>1.18.20</lombok.version>
     <common-module.version>2.0.2</common-module.version>
     <messaging-module.version>2.0.2</messaging-module.version>
-    <auth-service.version>1.0.2</auth-service.version>
+    <auth-service.version>1.0.3-SNAPSHOT</auth-service.version>
     <auth-module.version>micro-2.0.2</auth-module.version>
     <auth-module-web.version>1.0.2</auth-module-web.version>
     <distributed-task-module.version>2.0.3-SNAPSHOT</distributed-task-module.version>
