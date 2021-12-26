@@ -13,6 +13,7 @@
     <java.version>8</java.version>
     <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
     <lombok.version>1.18.20</lombok.version>
+    <redisson.version>3.16.1</redisson.version>
   </properties>
 
   <parent>
@@ -47,6 +48,12 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.12.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-spring-boot-starter</artifactId>
+        <version>${redisson.version}</version>
       </dependency>
 
       <dependency>
